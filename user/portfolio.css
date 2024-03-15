@@ -1,0 +1,105 @@
+/* Portfolio section */
+.portfolio-section {
+    padding: 60px 0;
+  }
+  
+  .portfolio-section .section-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .portfolio-section .portfolio-item {
+    margin-bottom: 30px;
+  }
+  
+  .portfolio-section .portfolio-item .portfolio-image {
+    position: relative;
+  }
+  
+  .portfolio-section .portfolio-item .portfolio-image img {
+    width: 100%;
+  }
+  
+  .portfolio-section .portfolio-item .portfolio-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all ease 0.5s;
+  }
+  
+  .portfolio-section .portfolio-item:hover .portfolio-image .overlay {
+    opacity: 1;
+  }
+  
+  .portfolio-section .portfolio-item .portfolio-image .overlay .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: #fff;
+  }
+  
+  .portfolio-section .portfolio-item .portfolio-image .overlay .icon:hover {
+    color: #f6b93b;
+  }
+  
+  .portfolio-section .portfolio-item .portfolio-info {
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .portfolio-section .portfolio-item .portfolio-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-section .portfolio-item .portfolio-info p {
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-section .portfolio-item .portfolio-info .btn {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #f6b93b;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    transition: all ease 0.5s;
+  }
+  
+  .portfolio-section .portfolio-item .portfolio-info .btn:hover {
+    background-color: #e55039;
+  }
+  
+  @media (max-width: 767px) {
+    .portfolio-section .portfolio-item {
+      margin-bottom: 20px;
+    }
+  
+    .portfolio-section .portfolio-item .portfolio-image {
+      overflow: hidden;
+      max-height: 250px;
+    }
+  
+    .portfolio-section .portfolio-item .portfolio-info {
+      padding: 10px;
+    }
+  
+    .portfolio-section .portfolio-item .portfolio-info h3 {
+      font-size: 18px;
+    }
+  
+    .portfolio-section .portfolio-item .portfolio-info .btn {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+  }
+  
